@@ -1,0 +1,10 @@
+Title: Anwar Choukah
+----
+Author: Anwar Choukah
+----
+Description: This website will house Anwar Choukah's portfolio, my CV, and my blog. There will also be CSS, HTML, and tech reading lists.
+----
+Keywords: anwar choukah, graphic designer, web designer, typography, 
+----
+Copyright: 
+* © 2013-(date: Year) (link: http://anwarchoukah.com text: Anwar Choukah)
