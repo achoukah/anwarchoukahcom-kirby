@@ -1,5 +1,7 @@
 Title: Anwar Choukah
 ----
+Subtitle: Graphic and web designer, CSS afficionado
+----
 Author: Anwar Choukah
 ----
 Description: This website will house Anwar Choukah's portfolio, my CV, and my blog. There will also be CSS, HTML, and tech reading lists.
