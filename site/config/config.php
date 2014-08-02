@@ -181,7 +181,7 @@ texts which are parsed by kirbytext()
 */
 
 // smartypants
-c::set('smartypants', false);
+c::set('smartypants', true);
 c::set('smartypants.attr', 1);
 c::set('smartypants.doublequote.open', '&#8220;');
 c::set('smartypants.doublequote.close', '&#8221;');
@@ -280,7 +280,7 @@ Please read more about it at: http://php.net/manual/en/function.date-default-tim
 
 */ 
 
-c::set('timezone', 'UTC');
+c::set('timezone', 'GMT');
 
 
 /*

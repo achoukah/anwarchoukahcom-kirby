@@ -4,9 +4,20 @@ Subtitle: Graphic and web designer, CSS afficionado
 ----
 Author: Anwar Choukah
 ----
-Description: This website will house Anwar Choukah's portfolio, my CV, and my blog. There will also be CSS, HTML, and tech reading lists.
+Description: This website is Anwar Choukah's portfolio, CV, and blog. There will also be CSS, HTML, and tech reading lists.
 ----
-Keywords: anwar choukah, graphic designer, web designer, typography, 
+Keywords: anwar choukah, graphic designer, web designer, typography, CSS, html, kirby
 ----
 Copyright: 
+
+<form id="search" action="<?php echo thisURL() ?>">
+  <h3>Search</h3>
+  <input type="text" placeholder="Search" name="q" class="searchfield" />
+  <h4>Hit 'Enter' to search</h4>
+</form>
 * © 2013-(date: Year) (link: http://anwarchoukah.com text: Anwar Choukah)
+* <a href="http://anwarchoukah.tumblr.com">My (mainly) comics Tumblr</a>
+* <a href="https://twitter.com/achoukah" class="twitter-follow-button" data-show-count="false">Follow @achoukah</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+

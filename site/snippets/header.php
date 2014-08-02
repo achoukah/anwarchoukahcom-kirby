@@ -21,4 +21,3 @@
   <header>
     <h1><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
     <h2><?php echo html($site->subtitle()) ?></h2>
-  </header>
