@@ -131,9 +131,9 @@ a:hover {
   text-decoration: none;
 }
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?7r4r6y');
+  src: url('fonts/icomoon.eot?#iefix7r4r6y') format('embedded-opentype'), url('fonts/icomoon.woff?7r4r6y') format('woff'), url('fonts/icomoon.ttf?7r4r6y') format('truetype'), url('fonts/icomoon.svg?7r4r6y#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -284,7 +284,7 @@ section h3 a {
   border: none !important;
 }
 section h3 a:after {
-  font-family: FontAwesome, sans-serif;
+  font-family: icomoon, sans-serif;
   content: "\f101";
   margin-left: .3rem;
   position: relative;
@@ -394,7 +394,7 @@ section .error span {
 }
 .blog h2 a:before {
   content: "\f036";
-  font-family: FontAwesome, sans-serif;
+  font-family: icomoon, sans-serif;
   margin-right: .5rem;
   font-size: .9rem;
   position: relative;
@@ -509,15 +509,22 @@ footer form {
   margin: 2rem auto;
   display: block;
   text-align: center;
+  /* firefox 19+ */
+  /* ie */
 }
 footer form h3,
 footer form h4 {
   padding: .4rem;
 }
+footer form h3 {
+  font-size: 1.2rem;
+}
 footer form h3:before {
-  content: "\f002";
-  font-family: FontAwesome, sans-serif;
+  content: "\e613";
+  font-family: icomoon, sans-serif;
   margin-right: .4rem;
+  position: relative;
+  top: .1rem;
 }
 footer form h4 {
   color: #666666;
@@ -531,20 +538,28 @@ footer form .searchfield {
   -webkit-transition: all .2s;
   transition: all .2s;
   font-family: Playfair Display, sans-serif;
-  color: #666666;
+  font-size: 1rem;
+  color: #4d4d4d;
   background: #999999;
   border-radius: 2rem;
   border: thin solid transparent;
-}
-footer form .searchfield:before {
-  content: "\f002";
-  font-family: FontAwesome, sans-serif;
-  color: #663399;
 }
 footer form .searchfield:focus {
   width: 22rem;
   background: #eeeeee;
   outline: none;
+}
+footer form ::-webkit-input-placeholder {
+  color: #666666;
+}
+footer form ::-moz-placeholder {
+  color: #666666;
+}
+footer form :-ms-input-placeholder {
+  color: #666666;
+}
+footer form input:-moz-placeholder {
+  color: #666666;
 }
 footer form .searchbutton {
   display: none;
@@ -553,7 +568,6 @@ footer form .searchbutton {
 /* LIGHTBOX STYLES */
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
   display: none;
 }
 .lightboxOverlay {
@@ -738,8 +752,9 @@ body:after {
     margin: inherit;
   }
   header nav ul:before {
-    content: "\f0c9";
-    font-family: FontAwesome, sans-serif;
+    content: "\e61a";
+    font-family: icomoon, sans-serif;
+    font-size: 1.4rem;
     display: inline-block;
     width: 1.3rem;
     padding: 0 0 1.5rem 0;
@@ -791,12 +806,15 @@ body:after {
     margin: inherit;
   }
   header nav ul:before {
-    content: "\f0c9";
-    font-family: FontAwesome, sans-serif;
+    content: "\e61a";
+    font-family: icomoon, sans-serif;
+    font-size: 1.4rem;
     display: inline-block;
     width: 1.3rem;
     padding: 0 0 1.5rem 0;
     cursor: pointer;
+    position: relative;
+    top: -0.1rem;
   }
   header nav ul:after {
     content: "Menu";
