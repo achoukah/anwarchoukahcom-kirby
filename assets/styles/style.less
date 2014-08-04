@@ -122,10 +122,19 @@ html{
   box-sizing: inherit;
 }
 
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+
 .container{
   width: 36rem;
   margin: 1rem auto;
   background: @bg-colour;
+  flex: 1;
 }
 
 a{
@@ -516,7 +525,7 @@ footer{
   margin: 2rem 0 0 0;
   clear: both;
   color: @grey-lt;
-  height: 100%;
+  // height: 100%;
   font-size: .8rem;
 
   ul{
