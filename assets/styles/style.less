@@ -810,9 +810,19 @@ footer{
 
   }
 
-  @import "style-mobile.less";
-  @import "style-tablet.less";
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+    @import "style-mobile.less";
+  }
 
-  // remove
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+    @import "style-tablet.less";
+  }  
 
-  @import "style-small.less";
+  // remove Mobile Test
+  @media only screen and (max-width : 37rem) {
+    @import "style-small.less";
+  }
