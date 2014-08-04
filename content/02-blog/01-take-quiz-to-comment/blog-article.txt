@@ -1,9 +1,10 @@
-Title: Blog
-
+Title: Take quiz to comment
+----
+Date: Saturday, 2 August, 2014
 ----
 Text: 
-## Take quiz to comment
-#### Saturday, 2 August, 2014
+
+![Alt text](http://lorempixel.com/800/600/sports/1 "Optional title")
 
 Sometimes, you read a good article that makes sense, you enjoy it, and the points are well made.
 
