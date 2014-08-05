@@ -205,29 +205,41 @@ header{
   }
 
   nav{
-    display: block;
+    // display: block;
     width: 100%;
-    margin: 1.4rem 0;
+    padding: 1rem 0;
+    border-top: medium solid @white-dk;
+    
+
     
     ul{
+      
+      display: block;
 
       li{
         display: inline-block;
-        margin: 1rem;
+        
         float: left;
 
         a{
-
+          margin: .5rem;
+          padding: .5rem;
         } 
 
         .active{
-          border-bottom: thin solid @red;
+          background: @white-lt;
+          
         }
 
       }
 
       li:first-child{
-        margin: 1rem 1rem 1rem 0;
+        
+
+        a{
+          // margin: .5rem .5rem .5rem 0;
+          // padding: .5rem .5rem .5rem 0;
+        }
       }
     }
 
@@ -418,11 +430,16 @@ section{
 }
 
 .blog{
+
+  span{
+    display: block;
+    margin-bottom: 3rem;
+  }
   
   h2{
     
     a:before{
-      content: "\f036"; // Align Left
+      content: "\e61b"; // Align Left
       font-family: @icomoon;
       margin-right: .5rem;
       font-size: .9rem;
@@ -435,6 +452,10 @@ section{
     border-top: thin solid @white-dk;
     margin-top: 1rem;
     padding-top: .5rem;
+  }
+
+  .blog-item{
+    margin-bottom: 4rem;
   }
 
   article:nth-child(2){

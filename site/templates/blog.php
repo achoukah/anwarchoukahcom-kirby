@@ -1,17 +1,16 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
-<section class="content blog">
+<section class="blog">
   
   <h1><?php echo html($page->title()) ?></h1>
-  <?php echo kirbytext($page->text()) ?>
+  <span><?php echo kirbytext($page->text()) ?></span>
   
   <?php foreach($page->children()->visible()->flip() as $article): ?>
   
-  <article>
-    <h1><?php echo html($article->title()) ?></h1>
+  <article class="blog-item">
+    <h2><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h2>
     <p><?php echo excerpt($article->text(), 300) ?></p>
-    <a href="<?php echo $article->url() ?>">Read more…</a>
   </article>
 
   <?php endforeach ?>
