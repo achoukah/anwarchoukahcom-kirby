@@ -3,8 +3,8 @@
 
 <section class="blog">
   
-  <h1><?php echo html($page->title()) ?></h1>
-  <span><?php echo kirbytext($page->text()) ?></span>
+  <!-- <h1><?php echo html($page->title()) ?></h1> -->
+  <h2><?php echo kirbytext($page->text()) ?></h2>
   
   <?php foreach($page->children()->visible()->flip() as $article): ?>
   

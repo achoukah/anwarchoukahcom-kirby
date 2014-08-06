@@ -15,6 +15,10 @@
   
   <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="Blog Feed" />
 
+  <script async src="assets/js/jquery-1.11.0.min.js"></script>
+  <script async src="assets/js/lightbox.min.js"></script>
+  <script async src="//www.google-analytics.com/analytics.js"></script>
+
 </head>
 
 <body>

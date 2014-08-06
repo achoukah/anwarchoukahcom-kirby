@@ -586,10 +586,6 @@ footer form .searchbutton {
   visibility: hidden;
 }
 /* LIGHTBOX STYLES */
-/* Preload images */
-body:after {
-  display: none;
-}
 .lightboxOverlay {
   position: absolute;
   top: 0;
@@ -642,6 +638,7 @@ body:after {
   line-height: 0;
 }
 .lb-cancel {
+  font-family: icomoon, sans-serif;
   display: block;
   width: 32px;
   height: 32px;

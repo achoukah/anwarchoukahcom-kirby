@@ -32,7 +32,6 @@
     @bodytext:        Playfair Display, sans-serif;
     @codefont:        Inconsolata, sans-serif;
     @icomoon:         icomoon, sans-serif;
-    @oldstandard:     Old Standard TT, serif;
 
 
   // SUPERVARIABLES
@@ -45,12 +44,6 @@
     @link-hover:      @red-lt;
     @link-active:     @red-dk;
 
-
-  /* Preload images */
-  body:after {
-    // content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
-    display: none;
-  }
 
   .lightboxOverlay {
     position: absolute;
@@ -114,6 +107,7 @@
   }
 
   .lb-cancel {
+    font-family: @icomoon;
     display: block;
     width: 32px;
     height: 32px;

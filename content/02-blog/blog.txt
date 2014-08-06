@@ -1,4 +1,4 @@
 Title: Blog
 ----
-Text: My writings
+Text: Here is where I practice my writing, where I put down my thoughts, and where I attempt to make sense of everything.
 ----    
