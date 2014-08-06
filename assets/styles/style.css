@@ -197,7 +197,7 @@ code.block {
 }
 header {
   padding: 2rem 0;
-  background: #333333;
+  background: #4d4d4d;
 }
 header .header-container {
   width: 36rem;
@@ -221,9 +221,9 @@ header h1 a {
   padding: .1rem 0 0rem 0;
 }
 header h1 a:hover {
-  color: #930000;
-  border-top: medium solid #930000;
-  border-bottom: medium solid #930000;
+  color: #dddddd;
+  border-top: medium solid #dddddd;
+  border-bottom: medium solid #dddddd;
 }
 header h2 {
   font-size: 1.4rem;
@@ -244,6 +244,12 @@ header nav ul li a {
   margin: .5rem;
   padding: .5rem;
 }
+header nav ul li a:hover {
+  color: #ffffff;
+}
+header nav ul li .active {
+  color: #dddddd;
+}
 header nav ul li .active::before {
   font-family: icomoon, sans-serif;
   font-size: 1.3rem;
@@ -251,7 +257,7 @@ header nav ul li .active::before {
   line-height: 0;
   position: relative;
   top: .3rem;
-  color: #c60000;
+  color: #dddddd;
   display: inline-block;
 }
 header nav ul li:first-child a {

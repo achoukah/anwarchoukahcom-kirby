@@ -168,7 +168,7 @@ code.block{
 
 header{
   padding: 2rem 0;
-  background: @black;
+  background: @black-lt;
 
   .header-container{
     width: 36rem;
@@ -195,9 +195,9 @@ header{
     }
 
     a:hover{
-      color: @link;
-      border-top: medium solid @link;
-      border-bottom: medium solid @link;
+      color: @white-dk;
+      border-top: medium solid @white-dk;
+      border-bottom: medium solid @white-dk;
     }
   }
 
@@ -224,8 +224,12 @@ header{
           padding: .5rem;
         }
 
-        .active{
+        a:hover{
+          color: @white-lt;
+        }
 
+        .active{
+          color: @white-dk;
         }
 
         .active::before{
@@ -235,7 +239,7 @@ header{
           line-height: 0;
           position: relative;
           top: .3rem;
-          color: @red-lt;
+          color: @white-dk;
           display: inline-block;
 
         }
