@@ -165,15 +165,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.container {
-  width: 36rem;
-  margin: 1rem auto;
-  background: #eeeeee;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
 a {
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -205,19 +196,28 @@ code.block {
   margin: 1rem 0;
 }
 header {
-  padding: 2rem 0 1rem 0  ;
+  padding: 2rem 0;
+  background: #333333;
+}
+header .header-container {
+  width: 36rem;
+  margin: auto;
 }
 header h1,
 header h2 {
   font-family: Open Sans Condensed, serif;
+  display: block;
+  color: #999999;
+}
+header a {
+  color: #999999;
 }
 header h1 {
   font-size: 3rem;
   font-weight: 300;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
 }
 header h1 a {
-  color: #4d4d4d;
   padding: .1rem 0 0rem 0;
 }
 header h1 a:hover {
@@ -246,22 +246,26 @@ header nav ul li a {
 }
 header nav ul li .active::before {
   font-family: icomoon, sans-serif;
+  font-size: 1.3rem;
   content: '\e60b';
   line-height: 0;
   position: relative;
-  color: #333333;
+  top: .3rem;
+  color: #c60000;
+  display: inline-block;
 }
 header nav ul li:first-child a {
   margin-left: 0;
   padding-left: 0;
 }
-header nav ul.submenu {
-  clear: both;
-  padding-top: 0;
-  border-top: thin solid #dddddd;
-}
-header nav ul.submenu li {
-  margin-top: .5rem;
+.container {
+  width: 36rem;
+  margin: 1rem auto;
+  background: #eeeeee;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 section {
   margin: 1rem 0 3rem 0;
@@ -277,7 +281,6 @@ section h1 {
   font-size: 1.7rem;
   font-weight: 300;
   padding: 1rem 0;
-  border-top: medium solid #dddddd;
 }
 section h1 a {
   color: #4d4d4d;

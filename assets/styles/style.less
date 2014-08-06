@@ -132,15 +132,6 @@ body{
   flex-direction: column;
 }
 
-
-
-.container{
-  width: 36rem;
-  margin: 1rem auto;
-  background: @bg-colour;
-  flex: 1;
-}
-
 a{
   transition: all .2s;
   color: @link;
@@ -177,19 +168,30 @@ code.block{
 }
 
 header{
-  padding: 2rem 0 1rem 0  ;
+  padding: 2rem 0;
+  background: @black;
+
+  .header-container{
+    width: 36rem;
+    margin: auto;
+  }
 
   h1, h2{
     font-family: @headline;
+    display: block;
+    color: @grey-lt;
   }
 
-  h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  margin: 0 0 1rem 0;
+  a{
+    color: @grey-lt;
+  }
+
+  h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 0 2rem 0;
 
     a{
-      color: @text-colour;
       padding: .1rem 0 0rem 0;
     }
 
@@ -206,13 +208,9 @@ header{
   }
 
   nav{
-    // display: block;
     width: 100%;
-    padding: 1rem 0;
-    // border-top: medium solid @white-dk;
-    
+    padding: 1rem 0;    
 
-    
     ul{
       
       display: block;
@@ -233,10 +231,14 @@ header{
 
         .active::before{
           font-family: @icomoon;
+          font-size: 1.3rem;
           content: '\e60b';
           line-height: 0;
           position: relative;
-          color: @black;
+          top: .3rem;
+          color: @red-lt;
+          display: inline-block;
+
         }
 
       }
@@ -250,19 +252,14 @@ header{
         }
       }
     }
+  }  
+}
 
-    ul.submenu{
-      clear: both;
-      padding-top: 0;
-      border-top: thin solid @white-dk;
-
-      li{
-        margin-top: .5rem;
-      }
-    }
-  }
-
-  
+.container{
+  width: 36rem;
+  margin: 1rem auto;
+  background: @bg-colour;
+  flex: 1;
 }
 
 section{
@@ -279,7 +276,7 @@ section{
     font-size: 1.7rem;
     font-weight: 300;
     padding: 1rem 0;
-    border-top: medium solid @white-dk;
+    // border-top: medium solid @white-dk;
 
     a{
       color: @text-colour;
