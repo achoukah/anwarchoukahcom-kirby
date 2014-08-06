@@ -10,13 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <?php echo css('assets/styles/style.css') ?>
+  <?php echo js('assets/js/jquery-1.11.0.min.js') ?>
+  <?php echo js('assets/js/lightbox.min.js') ?>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Playfair+Display:400,700,900,400italic,700italic,900italic|Inconsolata' rel='stylesheet' type='text/css'>
   
   <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="Blog Feed" />
 
-  <script async src="assets/js/jquery-1.11.0.min.js"></script>
-  <script async src="assets/js/lightbox.min.js"></script>
   <script async src="//www.google-analytics.com/analytics.js"></script>
 
 </head>

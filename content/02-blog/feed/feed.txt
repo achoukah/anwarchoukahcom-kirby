@@ -1,4 +1,4 @@
 Title: Anwar Choukah blog Feed
 ----
-Description: The latest updates from my blog: Writings on HTML, CSS, and design in general
+Description: The latest updates from my blog: Writings on HTML, CSS, typography and design in general
 ---- 

@@ -586,6 +586,12 @@ footer form .searchbutton {
   visibility: hidden;
 }
 /* LIGHTBOX STYLES */
+.lb-cancel,
+.lb-prev,
+.lb-next,
+.lb-close {
+  font-family: icomoon, sans-serif;
+}
 .lightboxOverlay {
   position: absolute;
   top: 0;
@@ -638,7 +644,6 @@ footer form .searchbutton {
   line-height: 0;
 }
 .lb-cancel {
-  font-family: icomoon, sans-serif;
   display: block;
   width: 32px;
   height: 32px;
@@ -667,7 +672,6 @@ footer form .searchbutton {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
@@ -681,7 +685,6 @@ footer form .searchbutton {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
@@ -730,7 +733,6 @@ footer form .searchbutton {
   float: right;
   width: 2rem;
   height: 2rem;
-  background: url(../img/close.png) #930000 top right no-repeat;
   text-align: right;
   outline: none;
   opacity: 0.7;
