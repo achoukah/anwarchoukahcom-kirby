@@ -431,6 +431,22 @@ section .error span {
 .blog .blog-item {
   margin-bottom: 4rem;
 }
+.blog .blog-item .blog-thumb {
+  width: 188px;
+  height: 188px;
+  float: left;
+  background: #dddddd;
+  margin: 0 1rem 0 0;
+}
+.blog .blog-item .read-more {
+  float: right;
+}
+.blog .blog-item .read-more::after {
+  font-family: icomoon, sans-serif;
+  content: '\e60b';
+  position: relative;
+  top: .2rem;
+}
 .blog article:nth-child(2) {
   border-top: 0;
 }
