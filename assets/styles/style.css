@@ -346,6 +346,8 @@ section figure figcaption strong:after {
 }
 section img {
   width: 100%;
+  background: #dddddd;
+  border: none;
 }
 section .error {
   display: block;
@@ -454,6 +456,11 @@ section .error span {
   padding: .3rem 1rem;
   margin: 0 0 1rem 0;
   border-left: medium solid #dddddd;
+}
+.blog-article h1,
+.blog-article h2 {
+  display: inline-block;
+  background: #930000;
 }
 .contact label {
   display: block;

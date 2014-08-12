@@ -1,12 +1,12 @@
 Title: Take quiz to comment
 ----
-Date: Saturday, 2 August, 2014
+Date: 140808
 ----
 Text: 
 
-![Alt text](http://lorempixel.com/800/600/sports/1 "Optional title")
-
 Sometimes, you read a good article that makes sense, you enjoy it, and the points are well made.
+
+![Image of cricketer](01.jpg "Optional title")
 
 Then... You get to the comments.
 

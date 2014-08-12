@@ -8,14 +8,21 @@
   
   <?php $articles = $page->children()->visible()->flip()->paginate(10) ?>
 
+
+
   <?php foreach($articles as $article): ?>
 
 
   
   <article class="blog-item">
     <h2><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h2>
+
+    <time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate"><?php echo $page->date('d.m.Y') ?></time>
+    
     <img class="blog-thumb" src="01-thumb.png" alt="">
+
     <p><?php echo excerpt($article->text(), 300) ?></p>
+
     <a href="<?php echo $article->url() ?>" class="read-more">Read more</a>
   </article>
 

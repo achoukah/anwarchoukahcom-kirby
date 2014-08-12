@@ -9,6 +9,14 @@
     <h2><?php echo html($page->subtitle()) ?></h2>
     <?php echo kirbytext($page->text()) ?>
 
+    <?php if($page->hasFiles()): ?> 
+    <ul>
+      <?php foreach($page->files() as $file): ?>
+      <li><?php echo $file->name() ?></li>
+      <?php endforeach ?>
+    </ul>
+    <?php endif ?>
+
     
   </article>
 

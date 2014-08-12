@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
 				"fo",
 				"font-size"
 			],
@@ -104,10 +108,6 @@
 				"inline-block"
 			],
 			[
-				"margin-",
-				"margin-right"
-			],
-			[
 				"sr",
 				"strong	Tag"
 			],
@@ -123,20 +123,100 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "site/templates/gallery.php",
+			"settings":
+			{
+				"buffer_size": 664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site/templates/blogarticle.php",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site/snippets/footer.php",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site/templates/blog.php",
+			"settings":
+			{
+				"buffer_size": 1295,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/style.less",
+			"settings":
+			{
+				"buffer_size": 11304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/anwarchoukah/Dropbox/WERK/Redesign 2014/sol-article/sol-article.html",
+			"settings":
+			{
+				"buffer_size": 7508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/lightbox.less",
+			"settings":
+			{
+				"buffer_size": 3888,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 223.0,
+		"height": 123.0,
 		"selected_items":
 		[
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
 			[
 				"prett",
 				"HTMLPrettify"
 			],
 			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
 				"package",
 				"Package Control: Install Package"
+			],
+			[
+				"packag	",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings – Default"
 			],
 			[
 				"prettif",
@@ -145,10 +225,6 @@
 			[
 				"colo",
 				"Color Picker"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
 			],
 			[
 				"pac",
@@ -213,13 +289,9 @@
 			[
 				"pinst",
 				"Package Control: Install Package"
-			],
-			[
-				"packag",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 441.0
+		"width": 569.0
 	},
 	"console":
 	{
@@ -240,15 +312,34 @@
 	},
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/index.php",
-		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style.css",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/snippets/footer.php",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/snippets/menu.php",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/snippets/header.php",
+		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/template.html",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/templates/blog.php",
 		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/snippets/submenu.php",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/User/inc_dec_value.sublime-settings",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/Inc-Dec-Value/inc_dec_value.sublime-settings",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/Zen Tabs/TODO.todo",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style.less",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/templates/default.php",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style-mobile.less",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style-small.less",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style-tablet.less",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/templates/blogarticle.php",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/site/templates/feed.php",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/content/home/home.txt",
+		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/assets/styles/style.css",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/anwarchoukahcom-kirby.sublime-project",
+		"/Applications/MAMP/htdocs/anwarchoukahcom-kirby/index.php",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/css/style.less",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/css/style.css",
-		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/process.php",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/js/validate.js",
-		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/template.html",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/js/form.js",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/contact_me.php",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com/css/stuff/form.html",
@@ -272,7 +363,6 @@
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com - wordpress/static/css/lightbox.css",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com - wordpress/static/style.less",
 		"/Users/anwarchoukah/Dropbox/00 - CURRENT/anwarchoukah.com - wordpress/static/style.css",
-		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/Users/anwarchoukah/Desktop/untitled.html",
 		"/Users/anwarchoukah/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
@@ -291,7 +381,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -305,6 +395,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h2",
+			"img",
+			"li",
+			"<li>",
+			"p",
+			"h1",
+			"h2",
+			"old",
+			"blogarticle",
+			"span",
+			".5rem .5rem .5rem ",
+			"before",
+			"7",
+			"1",
+			"#f00",
+			"form",
+			"#searc",
+			"search",
+			"icomoon",
+			"fontawesome",
+			"FontAwsome",
+			"?v=4.1.0",
+			"fontawesome-webfont",
 			"code",
 			"// VARIABLES\n\n//   // COLOURS\n\n//     @red:             #930000;\n//     @red-lt:          lighten(@red,10%);\n//     @red-dk:          darken(@red,10%);\n\n//     @rebecca:         #663399;\n//     @rebecca-lt:      lighten(@rebecca,20%);\n//     @rebecca-dk:      darken(@rebecca,20%);\n\n//     @grey:            #666666;\n//     @grey-lt:         lighten(@grey,20%);\n//     @grey-dk:         darken(@grey,20%);\n\n//     @black:           #333333;\n//     @black-lt:        lighten(@black,10%);\n//     @black-dk:        darken(@black,20%);\n\n//     @white:           #eeeeee;\n//     @white-lt:        #ffffff;\n//     @white-dk:        #dddddd;\n\n\n//   // FONTS \n\n//     @headline:        Open Sans Condensed, serif;\n//     @bodytext:        Playfair Display, sans-serif;\n//     @fontawesome:     FontAwesome, sans-serif;\n\n\n//   // SUPERVARIABLES\n\n//     @border-colour:   @grey-dk;\n//     @bg-colour:       @white;\n//     @text-colour:     @black-lt;\n\n//     @link:            @red;\n//     @link-hover:      @red-lt;\n//     @link-active:     @red-dk;\n\n",
 			"word-w",
@@ -415,6 +528,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"icomoon",
+			"IcoMoon",
 			"fontawesome",
 			"max-width: 768px",
 			"max-width: 800px",
@@ -429,8 +544,566 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "site/templates/gallery.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "site/templates/blogarticle.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "site/snippets/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "site/templates/blog.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "assets/styles/style.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4004,
+								4004
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3759.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/anwarchoukah/Dropbox/WERK/Redesign 2014/sol-article/sol-article.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/styles/lightbox.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2138,
+								2138
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-monokai.dark (SL).tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -451,11 +1124,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.482148503684,
 			1.0
 		],
 		"rows":
@@ -472,7 +1152,7 @@
 	"project": "anwarchoukahcom-kirby.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -506,7 +1186,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 142.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
