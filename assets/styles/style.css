@@ -165,6 +165,15 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.container {
+  width: 36rem;
+  margin: 1rem auto;
+  background: #eeeeee;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
 a {
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -176,6 +185,51 @@ a:hover {
 }
 a:active {
   color: #600000;
+}
+h1,
+h2 {
+  display: block;
+  width: 100%;
+  font-family: Open Sans Condensed, serif;
+}
+h1 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+h1 a {
+  color: #4d4d4d;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  text-align: right;
+  width: 100%;
+}
+h3 a {
+  border: none !important;
+}
+h3 a:after {
+  font-family: icomoon, sans-serif;
+  content: "\f101";
+  margin-left: .3rem;
+  position: relative;
+  top: .1rem;
+  display: inline-block;
+}
+h4 {
+  color: #666666;
+  margin: 1rem 0;
+  font-size: .9rem;
+}
+p {
+  line-height: 1.6;
+  margin: 0 0 .8rem 0;
+}
+p:nth-child(2) {
+  font-style: italic;
 }
 em {
   font-style: italic;
@@ -197,7 +251,7 @@ code.block {
 }
 header {
   padding: 2rem 0;
-  background: #4d4d4d;
+  background: #333333;
 }
 header .header-container {
   width: 36rem;
@@ -264,63 +318,9 @@ header nav ul li:first-child a {
   margin-left: 0;
   padding-left: 0;
 }
-.container {
-  width: 36rem;
-  margin: 1rem auto;
-  background: #eeeeee;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
 section {
   margin: 1rem 0 3rem 0;
   clear: both;
-}
-section h1,
-section h2 {
-  display: block;
-  width: 100%;
-  font-family: Open Sans Condensed, serif;
-}
-section h1 {
-  font-size: 1.7rem;
-  font-weight: 300;
-  padding: 1rem 0;
-}
-section h1 a {
-  color: #4d4d4d;
-}
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-section h3 {
-  text-align: right;
-  width: 100%;
-}
-section h3 a {
-  border: none !important;
-}
-section h3 a:after {
-  font-family: icomoon, sans-serif;
-  content: "\f101";
-  margin-left: .3rem;
-  position: relative;
-  top: .1rem;
-  display: inline-block;
-}
-section h4 {
-  color: #666666;
-  margin: 1rem 0;
-  font-size: .9rem;
-}
-section p {
-  line-height: 1.6;
-  margin: 0 0 .8rem 0;
-}
-section p:nth-child(2) {
-  font-style: italic;
 }
 section li {
   list-style-type: disc;
@@ -567,6 +567,7 @@ footer form h4 {
 }
 footer form h3 {
   font-size: 1.2rem;
+  text-align: center;
 }
 footer form h3:before {
   content: "\e613";
