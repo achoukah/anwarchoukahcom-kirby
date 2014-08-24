@@ -18,11 +18,13 @@
   
   <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="<?php echo html($pages->find('blog/feed')->title()) ?>" />
 
+    <link rel="shortcut icon" href="<?= url('assets/favicon/favicon.png') ?>">
+
+
 </head>
 
 <body>
 
   <header>
-    <div class="header-container">
       <h1><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
       <h2><?php echo html($site->subtitle()) ?></h2>

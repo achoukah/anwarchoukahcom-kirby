@@ -8,6 +8,4 @@
         <?php endforeach ?>
       </ul>
     </nav>
-  </div>
 </header>
-<div class="container">

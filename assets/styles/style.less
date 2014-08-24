@@ -29,7 +29,11 @@
     @bodytext:        Playfair Display, sans-serif;
     @codefont:        Inconsolata, sans-serif;
     @icomoon:         icomoon, sans-serif;
+  
+  // WIDTHS
 
+    @colwidth:        36rem;
+    @unit:            1rem;
 
   // SUPERVARIABLES
 
@@ -136,8 +140,8 @@
   }
 
   .container{
-    width: 36rem;
-    margin: 1rem auto;
+    width: @colwidth;
+    margin: @unit auto;
     background: @bg-colour;
     flex: 1;
   }
@@ -160,6 +164,10 @@
 
 // TYPOGRAPHY
 
+  h1, h2, h3, h4, p, nav, section, article{
+    -webkit-font-smoothing: antialiased;
+  }
+
   h1, h2{
     display: block;
     width: 100%;
@@ -169,7 +177,7 @@
   h1{
     font-size: 1.7rem;
     font-weight: 300;
-    padding: 1rem 0;
+    padding: @unit 0;
     // border-top: medium solid @white-dk;
 
     a{
@@ -179,7 +187,7 @@
 
   h2{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: @unit;
   }
 
   h3{
@@ -202,7 +210,7 @@
 
   h4{
     color: @grey;
-    margin: 1rem 0;
+    margin: @unit 0;
     font-size: .9rem;
   }
 
@@ -232,182 +240,200 @@
 
   code.block{
     display: block;
-    margin: 1rem 0;
+    margin: @unit 0;
   }
 
 // HEADER
 
   header{
-    padding: 2rem 0;
-    background: @black;
-
-    .header-container{
-      width: 36rem;
-      margin: auto;
-    }
+    padding: @unit*2 @unit;
+    background: @grey-dk;
+    color: @grey-lt;
+    font-family: @headline;
 
     h1, h2{
-      font-family: @headline;
       display: block;
-      color: @grey-lt;
+      width: @colwidth;
+      margin: auto;
     }
 
     a{
       color: @grey-lt;
+      display: inline-block;
     }
 
     h1{
       font-size: 3rem;
-      font-weight: 300;
-      margin: 0 0 2rem 0;
 
       a{
-        padding: .1rem 0 0rem 0;
+        width: auto;
       }
 
       a:hover{
         color: @white-dk;
-        border-top: medium solid @white-dk;
-        border-bottom: medium solid @white-dk;
+      }
+
+      a::before, a::after{
+        border-top: medium solid @white;
+        content: '';
+        display: block;
+        transition: .2s all;
+        opacity: 0;
+        transform: translateY(.1rem);
+      }
+      
+      a::before{
+        
+      }
+
+      a::after{
+
+      }
+
+      a:hover::before{
+        transform: translateY(3.4rem);
+      }
+
+      a:hover::after{
+        transform: translateY(-3.2rem);
+      }
+
+
+      a:hover::before, a:hover::after{
+        opacity: .6;
+        padding: 0 @unit;
       }
     }
 
     h2{
-      font-size: 1.4rem;
-      margin: 1rem 0;
-    }
-
-    nav{
-      width: 100%;
-      padding: 1rem 0;    
-
-      ul{
-        
-        display: block;
-
-        li{
-          display: inline-block;
-          
-          float: left;
-
-          a{
-            margin: .5rem;
-            padding: .5rem;
-          }
-
-          a:hover{
-            color: @white-lt;
-          }
-
-          .active{
-            color: @white-dk;
-          }
-
-          .active::before{
-            font-family: @icomoon;
-            font-size: 1.3rem;
-            content: '\e60b';
-            line-height: 0;
-            position: relative;
-            top: .3rem;
-            color: @white-dk;
-            display: inline-block;
-
-          }
-
-        }
-
-        li:first-child{
-          
-
-          a{
-            margin-left: 0;
-            padding-left: 0;
-          }
-        }
-      }
+      font-size: 1.5rem;
+      padding: 0 0 @unit 0;
     }  
   }
 
+// NAVIGATION
+
+  nav{
+    width: @colwidth;
+    padding: 0;
+    margin: auto;
+    font-size: 1.3rem;
 
 
-
-
-section{
-  margin: 1rem 0 3rem 0;
-  clear: both;
-  
-
-
-  ul{
-
-  }
-
-  li{
-    list-style-type: disc;
-    line-height: 1.4;
-    margin: 0 0 .8rem 1.2rem;
-  }
-
-  article{
-
-  }
-
-  figure{
-    margin: 0 0 1rem 0;
-    padding: 0 0 .5rem 0;
-    border-bottom: thin solid @white-dk;
-
-    figcaption{
-      font-size: .9rem;
-      padding: .2rem 0 .1rem 0;
-      color: @grey-lt;
-      text-align: right;
-
-      strong{
-        font-weight: 700;
-      }
-
-      strong:after{
-        content: " ... ";
-      }
-    }
-  }
-
-  img{
-    width: 100%;
-    background: @white-dk;
-    border: none;
-  }
-
-  .error{
-    display: block;
-    width: 100%;
-    margin: .6rem 0 2rem;
-    padding: 0 1rem 1rem;
-    border: thin solid @grey-lt;
-    background: @white-dk;
-    text-align: center;
-    box-shadow: 0 0 2rem -.4rem @black;
-
-    span{
+    ul{
+      
       display: block;
-      font-size: 14rem;
-      line-height: 1;
-      margin-top: -3rem;
-      letter-spacing: -1rem;
+
+      li{
+        display: inline-block;
+        
+        float: left;
+
+        a{
+          margin: .5rem;
+          padding: .5rem;
+        }
+
+        a:hover{
+          color: @white-lt;
+        }
+
+        .active{
+          color: @white-dk;
+        }
+
+        .active::before{
+          font-family: @icomoon;
+          font-size: 1.3rem;
+          content: '\e60b';
+          line-height: 0;
+          position: relative;
+          top: .3rem;
+          color: @white-dk;
+          display: inline-block;
+
+        }
+
+      }
+
+      li:first-child{
+        
+
+        a{
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
     }
   }
-}
 
-.intro{
-  p{
-    
+// MAIN SECTION
+
+  section{
+    margin: @unit auto 0;
+    clear: both;
+    width: @colwidth;
+
+    ul{
+
+    }
+
+    li{
+      list-style-type: disc;
+      line-height: 1.4;
+      margin: 0 0 .8rem 1.2rem;
+    }
+
+    article{
+
+    }
+
+    figure{
+      margin: 0 0 @unit 0;
+      padding: 0 0 .5rem 0;
+      border-bottom: thin solid @white-dk;
+
+      figcaption{
+        font-size: .9rem;
+        padding: .2rem 0 .1rem 0;
+        color: @grey-lt;
+        text-align: right;
+
+        strong{
+          font-weight: 700;
+        }
+
+        strong:after{
+          content: " ... ";
+        }
+      }
+    }
+
+    img{
+      width: 100%;
+      background: @white-dk;
+      border: none;
+    }
+
+    .error{
+      display: block;
+      width: 100%;
+      margin: .6rem 0 2rem;
+      padding: 0 @unit @unit;
+      border: thin solid @grey-lt;
+      background: @white-dk;
+      text-align: center;
+      box-shadow: 0 0 2rem -.4rem @black;
+
+      span{
+        display: block;
+        font-size: 14rem;
+        line-height: 1;
+        margin-top: -3rem;
+        letter-spacing: -@unit;
+      }
+    }
   }
-  p:nth-child(2) {
-    font-style: italic;
-  }
-}
 
 // GALLERY
 
@@ -422,7 +448,7 @@ section{
     a.gallery-item{
       justify-content: space-between;
       float: left;
-      margin: 0 .471rem .7rem .471rem;
+      margin: 0 .47@unit .7rem .47@unit;
       border-bottom: thick solid @link;
       transition: all .2s;
       width: auto;
@@ -478,7 +504,7 @@ section{
 
     article{
       border-top: thin solid @white-dk;
-      margin-top: 1rem;
+      margin-top: @unit;
       padding-top: .5rem;
     }
 
@@ -490,7 +516,7 @@ section{
         height: 188px;
         float: left;
         background: @white-dk;
-        margin: 0 1rem 0 0;
+        margin: 0 @unit 0 0;
       }
 
       .read-more{
@@ -512,8 +538,8 @@ section{
     }
 
     blockquote{
-      padding: .3rem 1rem;
-      margin: 0 0 1rem 0;
+      padding: .3rem @unit;
+      margin: 0 0 @unit 0;
       border-left: medium solid @white-dk;
     }
   }
@@ -540,8 +566,8 @@ section{
       width: 100%;
       max-width: 100%;
       padding: .4rem;
-      margin: 0 0 1rem 0;
-      font-size: 1rem;
+      margin: 0 0 @unit 0;
+      font-size: @unit;
       font-family: @bodytext;
       background: @white-dk;
       border: thin solid transparent;
@@ -557,7 +583,7 @@ section{
     input[type=submit]{
       -webkit-appearance: none;
       width: 100%;
-      padding: 1rem 4rem;
+      padding: @unit 4rem;
       font-size: 1.2rem;
       background: @link;
       color: @white;
@@ -673,7 +699,7 @@ section{
         padding: .5rem;
         transition: all .2s;
         font-family: @bodytext;
-        font-size: 1rem;
+        font-size: @unit;
         color: @black-lt;
         background: @grey-lt;
         border-radius: 2rem;
