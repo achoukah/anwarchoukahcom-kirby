@@ -164,7 +164,7 @@
 
 // TYPOGRAPHY
 
-  h1, h2, h3, h4, p, nav, section, article{
+  h1, h2, h3, h4, p, nav, section, article, footer{
     -webkit-font-smoothing: antialiased;
   }
 
@@ -241,6 +241,15 @@
   code.block{
     display: block;
     margin: @unit 0;
+  }
+
+  .rss-feed{
+    color: orange;
+  }
+
+  .rss-feed::before{
+    font-family: @icomoon;
+    content: '\e602';
   }
 
 // HEADER
@@ -627,26 +636,26 @@
   footer{
     width: 100%;
     background: @grey-dk;
-    padding: 2rem 0;
+    padding: @unit 0;
     margin: 2rem 0 0 0;
     clear: both;
     color: @grey-lt;
-    // height: 100%;
     font-size: .8rem;
 
     ul{
-      width: 60%;
       margin: auto;
       text-align: center;
+      display: flex;
+      width: @colwidth;
 
       li{
         display: inline;
-        padding: 0 .6rem;
-        border-right: thin solid @white-dk;
+        // padding: 0 .6rem;
+        flex: auto;
 
         .twitter-follow-button{
-          position: relative;
-          top: .3rem;
+          // position: relative;
+          // top: .3rem;
         }
       }
 
@@ -664,37 +673,37 @@
     }
 
     form{
-        width: 100%;
-        margin: 2rem auto;
-        display: block;
+      width: 100%;
+      margin: @unit auto;
+      display: block;
+      text-align: center;
+
+      h3, h4{
+        padding: .4rem;
+      }
+
+      h3{
+        font-size: 1.2rem;
         text-align: center;
+      }
 
-        h3, h4{
-          padding: .4rem;
-        }
+      h3:before{
+        content: "\e613";
+        font-family: @icomoon;
+        margin-right: .4rem;
+        position: relative;
+        top: .1rem;
 
-        h3{
-          font-size: 1.2rem;
-          text-align: center;
-        }
+      }
 
-        h3:before{
-          content: "\e613";
-          font-family: @icomoon;
-          margin-right: .4rem;
-          position: relative;
-          top: .1rem;
-
-        }
-
-        h4{
-          color: @grey;
-          font-size: .8rem;
-        }
+      h4{
+        color: @grey;
+        font-size: .8rem;
+      }
 
       .searchfield{
         width: 18rem;
-        height: 2.5rem;
+        height: 2.2rem;
         text-align: center;
         padding: .5rem;
         transition: all .2s;

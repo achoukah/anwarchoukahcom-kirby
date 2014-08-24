@@ -193,7 +193,8 @@ h4,
 p,
 nav,
 section,
-article {
+article,
+footer {
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -258,6 +259,13 @@ code {
 code.block {
   display: block;
   margin: 1rem 0;
+}
+.rss-feed {
+  color: orange;
+}
+.rss-feed::before {
+  font-family: icomoon, sans-serif;
+  content: '\e602';
 }
 header {
   padding: 2rem 1rem;
@@ -556,25 +564,27 @@ section .error span {
 footer {
   width: 100%;
   background: #333333;
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin: 2rem 0 0 0;
   clear: both;
   color: #999999;
   font-size: .8rem;
 }
 footer ul {
-  width: 60%;
   margin: auto;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 36rem;
 }
 footer ul li {
   display: inline;
-  padding: 0 .6rem;
-  border-right: thin solid #dddddd;
-}
-footer ul li .twitter-follow-button {
-  position: relative;
-  top: .3rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
 }
 footer ul li:last-child {
   border: 0;
@@ -587,7 +597,7 @@ footer a:hover {
 }
 footer form {
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   display: block;
   text-align: center;
   /* firefox 19+ */
@@ -614,7 +624,7 @@ footer form h4 {
 }
 footer form .searchfield {
   width: 18rem;
-  height: 2.5rem;
+  height: 2.2rem;
   text-align: center;
   padding: .5rem;
   -webkit-transition: all .2s;

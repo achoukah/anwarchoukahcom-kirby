@@ -9,9 +9,6 @@
     ?>
 
     <?php echo kirbytext($site->copyright()) ?>
-    <ul>
-      <li><a href="<?php echo url('blog/feed') ?>">RSS Feed</a></li>
-    </ul>
 
   </footer>
 
