@@ -32,7 +32,7 @@
   
   // WIDTHS
 
-    @colwidth:        36rem;
+    @colwidth:        32rem;
     @unit:            1rem;
 
   // SUPERVARIABLES
@@ -122,7 +122,7 @@
 // SITE
 
   html{
-    font-size: 17px;
+    font-size: 18px;
     background: @bg-colour;
     color: @text-colour;
     font-family: @bodytext;
@@ -219,7 +219,7 @@
     margin: 0 0 .8rem 0;
   }
 
-  p:nth-child(2) {
+  p:nth-child(3) {
     font-style: italic;
   }
   em{
@@ -259,6 +259,7 @@
     background: @grey-dk;
     color: @grey-lt;
     font-family: @headline;
+    width: 100%;
 
     h1, h2{
       display: block;
@@ -330,13 +331,13 @@
 
 
     ul{
+      // float: left;
+      display: flex;
       
-      display: block;
 
       li{
         display: inline-block;
-        
-        float: left;
+        flex: auto;
 
         a{
           margin: .5rem;
@@ -358,8 +359,10 @@
           line-height: 0;
           position: relative;
           top: .3rem;
+          // left: -.4rem;
           color: @white-dk;
           display: inline-block;
+          text-align: left;
 
         }
 
@@ -379,22 +382,35 @@
 // MAIN SECTION
 
   section{
-    margin: @unit auto 0;
+    margin: @unit 0 @unit*4;
+    padding: @unit;
     clear: both;
-    width: @colwidth;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    // left: -@unit;
+    
 
     ul{
-
+      
     }
 
     li{
-      list-style-type: disc;
       line-height: 1.4;
-      margin: 0 0 .8rem 1.2rem;
+      margin: 0 0 .8rem 0;
+    }
+
+    li::before{
+      font-family: @icomoon;
+      content: '\e61d';
+      color: @red;
+      margin-right: .3rem;
     }
 
     article{
-
+      margin: auto;
+      padding: 0;
+      width: @colwidth;
     }
 
     figure{
@@ -413,7 +429,7 @@
         }
 
         strong:after{
-          content: " ... ";
+          content: ' ... ';
         }
       }
     }
@@ -498,9 +514,15 @@
       display: block;
       margin-bottom: 3rem;
     }
+
+    h1 {
+      width: @colwidth;
+    }
     
     h2{
-      
+      width: @colwidth;
+      margin: auto;
+
       a:before{
         content: "\e61b"; // Align Left
         font-family: @icomoon;
@@ -513,12 +535,12 @@
 
     article{
       border-top: thin solid @white-dk;
-      margin-top: @unit;
-      padding-top: .5rem;
+      // margin-top: @unit;
+      // padding-top: .5rem;
     }
 
     .blog-item{
-      margin-bottom: 4rem;
+      
 
       .blog-thumb{
         width: 188px;
@@ -683,7 +705,7 @@
       }
 
       h3{
-        font-size: 1.2rem;
+        font-size: @unit;
         text-align: center;
       }
 
@@ -735,6 +757,11 @@
   }
 
 // MEDIAQUERIES
+
+  // remove Mobile Test
+  // @media only screen and (max-width : (@colwidth+8rem)) {
+  //   @import "style-small.less";
+  // }
   
   @import "lightbox.less";
 
@@ -750,7 +777,4 @@
     @import "style-tablet.less";
   }  
 
-  // remove Mobile Test
-  @media only screen and (max-width : 37rem) {
-    @import "style-small.less";
-  }
+

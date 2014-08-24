@@ -138,7 +138,7 @@ a:hover {
   font-style: normal;
 }
 html {
-  font-size: 17px;
+  font-size: 18px;
   background: #eeeeee;
   color: #4d4d4d;
   font-family: Playfair Display, sans-serif;
@@ -166,7 +166,7 @@ body {
   flex-direction: column;
 }
 .container {
-  width: 36rem;
+  width: 32rem;
   margin: 1rem auto;
   background: #eeeeee;
   -webkit-box-flex: 1;
@@ -239,7 +239,7 @@ p {
   line-height: 1.6;
   margin: 0 0 .8rem 0;
 }
-p:nth-child(2) {
+p:nth-child(3) {
   font-style: italic;
 }
 em {
@@ -272,11 +272,12 @@ header {
   background: #333333;
   color: #999999;
   font-family: Open Sans Condensed, serif;
+  width: 100%;
 }
 header h1,
 header h2 {
   display: block;
-  width: 36rem;
+  width: 32rem;
   margin: auto;
 }
 header a {
@@ -324,17 +325,23 @@ header h2 {
   padding: 0 0 1rem 0;
 }
 nav {
-  width: 36rem;
+  width: 32rem;
   padding: 0;
   margin: auto;
   font-size: 1.3rem;
 }
 nav ul {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 nav ul li {
   display: inline-block;
-  float: left;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
 }
 nav ul li a {
   margin: .5rem;
@@ -355,20 +362,37 @@ nav ul li .active::before {
   top: .3rem;
   color: #dddddd;
   display: inline-block;
+  text-align: left;
 }
 nav ul li:first-child a {
   margin-left: 0;
   padding-left: 0;
 }
 section {
-  margin: 1rem auto 0;
+  margin: 1rem 0 4rem;
+  padding: 1rem;
   clear: both;
-  width: 36rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  position: relative;
 }
 section li {
-  list-style-type: disc;
   line-height: 1.4;
-  margin: 0 0 .8rem 1.2rem;
+  margin: 0 0 .8rem 0;
+}
+section li::before {
+  font-family: icomoon, sans-serif;
+  content: '\e61d';
+  color: #930000;
+  margin-right: .3rem;
+}
+section article {
+  margin: auto;
+  padding: 0;
+  width: 32rem;
 }
 section figure {
   margin: 0 0 1rem 0;
@@ -385,7 +409,7 @@ section figure figcaption strong {
   font-weight: 700;
 }
 section figure figcaption strong:after {
-  content: " ... ";
+  content: ' ... ';
 }
 section img {
   width: 100%;
@@ -457,6 +481,13 @@ section .error span {
   display: block;
   margin-bottom: 3rem;
 }
+.blog h1 {
+  width: 32rem;
+}
+.blog h2 {
+  width: 32rem;
+  margin: auto;
+}
 .blog h2 a:before {
   content: "\e61b";
   font-family: icomoon, sans-serif;
@@ -467,11 +498,6 @@ section .error span {
 }
 .blog article {
   border-top: thin solid #dddddd;
-  margin-top: 1rem;
-  padding-top: .5rem;
-}
-.blog .blog-item {
-  margin-bottom: 4rem;
 }
 .blog .blog-item .blog-thumb {
   width: 188px;
@@ -577,7 +603,7 @@ footer ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 36rem;
+  width: 32rem;
 }
 footer ul li {
   display: inline;
@@ -608,7 +634,7 @@ footer form h4 {
   padding: .4rem;
 }
 footer form h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
 }
 footer form h3:before {
@@ -868,57 +894,4 @@ footer form .searchbutton {
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* iPads (portrait and landscape) */
-}
-@media only screen and (max-width: 37rem) {
-  /* Smartphones (portrait and landscape) */
-  html {
-    font-size: 18px;
-  }
-  .container {
-    width: 100%;
-    padding: 0 1rem 1rem 1rem;
-  }
-  header {
-    padding: 1rem 0 2rem 0;
-  }
-  header nav {
-    position: relative;
-  }
-  header nav ul {
-    width: auto;
-    margin: auto;
-  }
-  header nav ul li {
-    display: block;
-    margin: 1rem 0;
-    float: none;
-  }
-  header nav ul li:first-child {
-    margin: inherit;
-  }
-  header nav ul:before {
-    content: "\e61a";
-    font-family: icomoon, sans-serif;
-    font-size: 1.4rem;
-    display: inline-block;
-    width: 1.3rem;
-    padding: 0 0 1.5rem 0;
-    cursor: pointer;
-    position: relative;
-    top: -0.1rem;
-  }
-  header nav ul:after {
-    content: "Menu";
-    float: left;
-    position: absolute;
-    top: 0;
-    padding: 0 0 .6rem 1.5rem;
-    border-bottom: #999999 solid thin;
-    cursor: pointer;
-  }
-  footer ul li {
-    display: list-item;
-    border: 0;
-    padding: 0 0 .4rem 0;
-  }
 }

@@ -1,0 +1,38 @@
+Title: 
+
+About me
+
+----
+
+Text: 
+
+Anwar Choukah is a designer with over **15 years'** experience with web design.
+
+Anwar currently works as Deputy Art Director for [The Sun](http://thesun.co.uk/ "The Sun website") where he is instrumental in every redesign as well as development of past, current, and future products as part of the Strategy Team.
+
+He has also worked as a freelance designer, specialising in web site design and front-end development as well as branding and strategy consulting.
+
+He is a huge fan of legibility, typography, web standards and accessibility.
+
+(image: me.jpg)
+
+## History
+
+He graduated from [LCP &mdash; London College of Printing and Distributive Trades](http://www.arts.ac.uk/lcc/ "London College of Communication") (now called LCC) in 2001.
+
+He also started working for [The Sun](http://thesun.co.uk/ "The Sun website") in 1998 as part of the newly formed web team, back when CSS was just a twinkle in the eye of fellow Norwegian [Håkon Wium Lie](http://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie "Håkin Wium Lie on Wikipedia") and the [WWWC](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium "The World Wide Web Consortium on Wikipedia"). Hell, he remembers trying to make sense of tables within tables within tables so deep it would put [Inception](http://en.wikipedia.org/wiki/Inception "The Movie Inception on Wikipedia") to shame.
+
+Originally from Norway, Anwar currently lives in London, UK with his two daughters and lovely wife.
+
+
+
+## Skills
+
+* Art direction
+* Branding and identity
+* Graphic design
+* UX and UI design
+* Illustration
+* HTML
+* CSS
+

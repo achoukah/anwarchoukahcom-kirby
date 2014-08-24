@@ -3,9 +3,9 @@
 
 
 <section>
-  <!-- <h1><?php echo html($page->title()) ?></h1> -->
+  
   <article>
-    
+    <h1><?php echo html($page->title()) ?></h1>  
     <h2><?php echo html($page->subtitle()) ?></h2>
     <?php echo kirbytext($page->text()) ?>
 
