@@ -82,9 +82,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  font-weight: normal;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -202,10 +201,10 @@ h2 {
   display: block;
   width: 100%;
   font-family: Open Sans Condensed, serif;
+  font-weight: 300;
 }
 h1 {
   font-size: 1.7rem;
-  font-weight: 300;
   padding: 1rem 0;
 }
 h1 a {
@@ -246,33 +245,47 @@ em {
   font-style: italic;
 }
 code {
-  padding: 0 .5rem;
-  margin: 0 .5rem;
   border-radius: .2rem;
-  border: thin dotted #999999;
   background: #333333;
   font-family: Inconsolata, sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
   color: #eeeeee;
-  display: inline-block;
-}
-code.block {
+  -webkit-font-smoothing: aliased;
   display: block;
   margin: 1rem 0;
+  padding: 1rem;
+  line-height: 1.4;
 }
-.rss-feed {
+code.inline {
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+}
+.rss-feed:hover {
   color: orange;
 }
 .rss-feed::before {
   font-family: icomoon, sans-serif;
   content: '\e602';
+  padding-right: 0.25rem;
+}
+blockquote {
+  padding-left: 1rem;
+  border-left: medium solid #dddddd;
+  margin: 2rem 0;
+}
+blockquote p {
+  margin: 0.5rem 0;
+}
+strong {
+  font-weight: 600;
 }
 header {
   padding: 2rem 1rem;
   background: #333333;
   color: #999999;
   font-family: Open Sans Condensed, serif;
-  width: 100%;
+  width: auto;
 }
 header h1,
 header h2 {
@@ -355,13 +368,11 @@ nav ul li .active {
 }
 nav ul li .active::before {
   font-family: icomoon, sans-serif;
-  font-size: 1.3rem;
   content: '\e60b';
   line-height: 0;
   position: relative;
-  top: .3rem;
+  top: .1rem;
   color: #dddddd;
-  display: inline-block;
   text-align: left;
 }
 nav ul li:first-child a {
@@ -376,7 +387,7 @@ section {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  width: 100%;
+  width: auto;
   position: relative;
 }
 section li {
@@ -395,14 +406,13 @@ section article {
   width: 32rem;
 }
 section figure {
-  margin: 0 0 1rem 0;
-  padding: 0 0 .5rem 0;
+  margin: 1rem 0;
+  padding: 0 0 0.5rem 0;
   border-bottom: thin solid #dddddd;
 }
 section figure figcaption {
-  font-size: .9rem;
   padding: .2rem 0 .1rem 0;
-  color: #999999;
+  color: #666666;
   text-align: right;
 }
 section figure figcaption strong {
@@ -481,23 +491,45 @@ section .error span {
   display: block;
   margin-bottom: 3rem;
 }
-.blog h1 {
-  width: 32rem;
-}
-.blog h2 {
-  width: 32rem;
-  margin: auto;
-}
-.blog h2 a:before {
-  content: "\e61b";
+.blog h2 a:after {
+  content: "\e60b";
   font-family: icomoon, sans-serif;
-  margin-right: .5rem;
-  font-size: .9rem;
+  margin-left: 0rem;
   position: relative;
-  top: -0.15rem;
+  top: .2rem;
 }
-.blog article {
+.blog .pagination {
+  font-size: 100%;
+  border-top: medium solid #dddddd;
+  border-bottom: medium solid #dddddd;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  float: left;
+}
+.blog .pagination .prev {
+  float: left;
+}
+.blog .pagination .prev::before {
+  font-family: icomoon, sans-serif;
+  content: '\e608';
+  position: relative;
+  top: .2rem;
+}
+.blog .pagination .next {
+  float: right;
+}
+.blog .pagination .next::after {
+  font-family: icomoon, sans-serif;
+  content: '\e60b';
+  position: relative;
+  top: .2rem;
+}
+.blog .blog-item {
+  margin-bottom: 2rem;
+}
+.blog .blog-item h2 {
   border-top: thin solid #dddddd;
+  padding-top: 1rem;
 }
 .blog .blog-item .blog-thumb {
   width: 188px;
@@ -507,7 +539,9 @@ section .error span {
   margin: 0 1rem 0 0;
 }
 .blog .blog-item .read-more {
-  float: right;
+  text-align: right;
+  width: 100%;
+  display: block;
 }
 .blog .blog-item .read-more::after {
   font-family: icomoon, sans-serif;
@@ -515,18 +549,24 @@ section .error span {
   position: relative;
   top: .2rem;
 }
-.blog article:nth-child(2) {
-  border-top: 0;
+.blogarticle time {
+  color: #666666;
+  padding: 1rem 0;
+  font-size: .9rem;
 }
-.blog blockquote {
-  padding: 0.3rem 1rem;
-  margin: 0 0 1rem 0;
-  border-left: medium solid #dddddd;
+.blogarticle time::before {
+  content: 'Published: ';
+  color: #999999;
 }
-.blog-article h1,
-.blog-article h2 {
-  display: inline-block;
-  background: #930000;
+.blogarticle .back-blog-index {
+  border-top: medium solid #dddddd;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  display: block;
+}
+.blogarticle .back-blog-index::before {
+  font-family: icomoon, sans-serif;
+  content: '\e608';
 }
 .contact label {
   display: block;
@@ -588,13 +628,13 @@ section .error span {
   display: block;
 }
 footer {
-  width: 100%;
+  width: auto;
   background: #333333;
-  padding: 1rem 0;
+  padding: 2rem 0 3rem 0;
   margin: 2rem 0 0 0;
   clear: both;
   color: #999999;
-  font-size: .8rem;
+  font-family: Open Sans Condensed, serif;
 }
 footer ul {
   margin: auto;
@@ -604,6 +644,8 @@ footer ul {
   display: -ms-flexbox;
   display: flex;
   width: 32rem;
+  border-top: thin solid #666666;
+  padding: 1rem 0;
 }
 footer ul li {
   display: inline;
@@ -631,10 +673,10 @@ footer form {
 }
 footer form h3,
 footer form h4 {
-  padding: .4rem;
+  padding: 0.5rem 0;
 }
 footer form h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 footer form h3:before {
@@ -646,15 +688,16 @@ footer form h3:before {
 }
 footer form h4 {
   color: #666666;
-  font-size: .8rem;
+  font-size: 1rem;
+  margin: 0;
 }
 footer form .searchfield {
   width: 18rem;
   height: 2.2rem;
   text-align: center;
   padding: .5rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   font-family: Playfair Display, sans-serif;
   font-size: 1rem;
   color: #4d4d4d;
@@ -682,6 +725,59 @@ footer form input:-moz-placeholder {
 footer form .searchbutton {
   display: none;
   visibility: hidden;
+}
+@media only screen and (max-width: 40rem) {
+  /* Smartphones (portrait and landscape) */
+  html {
+    font-size: 18px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+  }
+  header {
+    padding: 1rem 0 2rem 0;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    width: auto;
+    margin: auto;
+  }
+  nav ul li {
+    display: block;
+    margin: 1rem 0;
+    float: none;
+  }
+  nav ul li:first-child {
+    margin: inherit;
+  }
+  nav ul:before {
+    content: "\e61a";
+    font-family: icomoon, sans-serif;
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 1.3rem;
+    padding: 0 0 1.5rem 0;
+    cursor: pointer;
+    position: relative;
+    top: -0.1rem;
+  }
+  nav ul:after {
+    content: "Menu";
+    float: left;
+    position: absolute;
+    top: 0;
+    padding: 0 0 .6rem 1.5rem;
+    border-bottom: #999999 solid thin;
+    cursor: pointer;
+  }
+  footer ul li {
+    display: list-item;
+    border: 0;
+    padding: 0 0 .4rem 0;
+  }
 }
 /* LIGHTBOX STYLES */
 .lb-cancel,

@@ -1,12 +1,37 @@
-<?php snippet( 'header') ?>
-<?php snippet( 'menu') ?>
+<?php snippet('header') ?>
+<?php snippet('menu') ?>
 
-<section class="content blog-article">
-    <article>
-        <h2><?php echo kirbytext($article->title()) ?></h2>
-        <h2>Hello</h2>
-        <?php echo kirbytext($article->text()) ?>
-    </article>
+<section class="content blogarticle">
+  <article>
+    <h1><?php echo html($page->title()) ?></h1>
+
+    <time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate" class="date">
+      <?php echo $page->date('d.m.Y') ?>
+    </time>
+
+    <?php if($page->hasImages()): ?> 
+
+      <?php foreach($page->images() as $image): ?>
+      <figure>
+      <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+        <figcaption><?php echo $image->caption() ?></figcaption>
+      </figure>
+
+      <?php endforeach ?>
+
+    <?php endif ?>
+    <?php echo kirbytext($page->text()) ?>
+
+
+    
+
+
+
+    
+
+    <a class="back-blog-index" href="<?php echo url('blog') ?>">Back to blog index</a>
+
+  </article>
 </section>
 
-<?php snippet( 'footer') ?>
+<?php snippet('footer') ?>

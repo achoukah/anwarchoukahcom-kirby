@@ -68,9 +68,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
+    font-weight: normal;
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
@@ -172,13 +171,12 @@
     display: block;
     width: 100%;
     font-family: @headline;
+    font-weight: 300;
   }
 
   h1{
     font-size: 1.7rem;
-    font-weight: 300;
     padding: @unit 0;
-    // border-top: medium solid @white-dk;
 
     a{
       color: @text-colour;
@@ -227,29 +225,50 @@
   }
 
   code{
-    padding: 0 .5rem;
-    margin: 0 .5rem;
     border-radius: .2rem;
-    border: thin dotted @grey-lt;
     background: @grey-dk;
     font-family: @codefont;
-    font-size: .9rem;
+    font-size: 1rem;
     color: @white;
-    display: inline-block;
-  }
-
-  code.block{
+    -webkit-font-smoothing: aliased;
     display: block;
     margin: @unit 0;
+    padding: @unit;
+    line-height: 1.4;
+  }
+
+  code.inline{
+    display: inline-block;
+    padding: 0 @unit/2;
+    margin: 0 @unit/2;
   }
 
   .rss-feed{
+    
+  }
+
+  .rss-feed:hover {
     color: orange;
   }
 
   .rss-feed::before{
     font-family: @icomoon;
     content: '\e602';
+    padding-right: @unit/4;
+  }
+
+  blockquote {
+    padding-left: @unit;
+    border-left: medium solid @white-dk;
+    margin: @unit*2 0;
+
+    p{
+      margin: @unit/2 0; 
+    }
+  }
+
+  strong{
+    font-weight: 600;
   }
 
 // HEADER
@@ -259,7 +278,7 @@
     background: @grey-dk;
     color: @grey-lt;
     font-family: @headline;
-    width: 100%;
+    width: auto;
 
     h1, h2{
       display: block;
@@ -331,7 +350,6 @@
 
 
     ul{
-      // float: left;
       display: flex;
       
 
@@ -354,14 +372,14 @@
 
         .active::before{
           font-family: @icomoon;
-          font-size: 1.3rem;
+          // font-size: 1.3rem;
           content: '\e60b';
           line-height: 0;
           position: relative;
-          top: .3rem;
+          top: .1rem;
           // left: -.4rem;
           color: @white-dk;
-          display: inline-block;
+          // display: inline-block;
           text-align: left;
 
         }
@@ -386,7 +404,7 @@
     padding: @unit;
     clear: both;
     flex: 1;
-    width: 100%;
+    width: auto;
     position: relative;
     // left: -@unit;
     
@@ -414,14 +432,13 @@
     }
 
     figure{
-      margin: 0 0 @unit 0;
-      padding: 0 0 .5rem 0;
+      margin: @unit 0;
+      padding: 0 0 @unit/2 0;
       border-bottom: thin solid @white-dk;
 
       figcaption{
-        font-size: .9rem;
         padding: .2rem 0 .1rem 0;
-        color: @grey-lt;
+        color: @grey;
         text-align: right;
 
         strong{
@@ -516,31 +533,58 @@
     }
 
     h1 {
-      width: @colwidth;
+      
     }
     
     h2{
-      width: @colwidth;
-      margin: auto;
 
-      a:before{
-        content: "\e61b"; // Align Left
+      a:after {
+        content: "\e60b"; // Align Left
         font-family: @icomoon;
-        margin-right: .5rem;
-        font-size: .9rem;
+        margin-left: 0rem;
         position: relative;
-        top: -.15rem;
+        top: .2rem;
       }    
     }
 
-    article{
-      border-top: thin solid @white-dk;
-      // margin-top: @unit;
-      // padding-top: .5rem;
+    .pagination {
+      font-size: 100%;
+      border-top: medium solid @white-dk;
+      border-bottom: medium solid @white-dk;
+      padding: @unit 0;
+      margin-top: @unit*3;
+      float: left;
+
+      .prev{
+        float: left;
+      }
+
+      .prev::before{
+        font-family: @icomoon;
+        content: '\e608';
+        position: relative;
+        top: .2rem;
+      }
+
+      .next{
+        float: right;
+      }
+
+      .next::after{
+        font-family: @icomoon;
+        content: '\e60b';
+        position: relative;
+        top: .2rem;
+      }
     }
 
     .blog-item{
-      
+      margin-bottom: @unit*2;
+
+      h2{
+        border-top: thin solid @white-dk;
+        padding-top: @unit;
+      }
 
       .blog-thumb{
         width: 188px;
@@ -551,7 +595,9 @@
       }
 
       .read-more{
-        float: right;
+        text-align: right;
+        width: 100%;
+        display: block;
       }
 
       .read-more::after{
@@ -561,25 +607,31 @@
         top: .2rem;
       }
     }
-
-    
-
-    article:nth-child(2){
-      border-top: 0;
-    }
-
-    blockquote{
-      padding: .3rem @unit;
-      margin: 0 0 @unit 0;
-      border-left: medium solid @white-dk;
-    }
   }
 
-  .blog-article{
-    h1, h2{
-      display: inline-block;
-      background: @red;
-      
+  .blogarticle {
+
+    time {
+      color: @grey;
+      padding: @unit 0;
+      font-size: .9rem;
+    }
+
+    time::before {
+      content: 'Published: ';
+      color: @grey-lt;
+    }
+
+    .back-blog-index {
+      border-top: medium solid @white-dk;
+      padding: @unit 0;
+      margin-top: @unit;
+      display: block;
+    }
+
+    .back-blog-index::before {
+      font-family: @icomoon;
+      content: '\e608';
     }
   }
 
@@ -656,30 +708,30 @@
 // FOOTER
 
   footer{
-    width: 100%;
+    width: auto;
     background: @grey-dk;
-    padding: @unit 0;
+    padding: @unit*2 0 @unit*3 0;
     margin: 2rem 0 0 0;
     clear: both;
     color: @grey-lt;
-    font-size: .8rem;
+    // font-size: .9rem;
+    font-family: @headline;
 
     ul{
       margin: auto;
       text-align: center;
       display: flex;
       width: @colwidth;
+      border-top: thin solid @grey;
+      padding: @unit 0;
 
       li{
         display: inline;
         // padding: 0 .6rem;
         flex: auto;
-
-        .twitter-follow-button{
-          // position: relative;
-          // top: .3rem;
-        }
       }
+
+ 
 
       li:last-child{
         border: 0;
@@ -701,11 +753,11 @@
       text-align: center;
 
       h3, h4{
-        padding: .4rem;
+        padding: @unit/2 0;
       }
 
       h3{
-        font-size: @unit;
+        font-size: 1.3rem;
         text-align: center;
       }
 
@@ -720,7 +772,8 @@
 
       h4{
         color: @grey;
-        font-size: .8rem;
+        font-size: 1rem;
+        margin: 0;
       }
 
       .searchfield{
@@ -728,7 +781,7 @@
         height: 2.2rem;
         text-align: center;
         padding: .5rem;
-        transition: all .2s;
+        transition: all .5s;
         font-family: @bodytext;
         font-size: @unit;
         color: @black-lt;
@@ -756,12 +809,14 @@
     }
   }
 
+  
+
 // MEDIAQUERIES
 
   // remove Mobile Test
-  // @media only screen and (max-width : (@colwidth+8rem)) {
-  //   @import "style-small.less";
-  // }
+  @media only screen and (max-width : (@colwidth+8rem)) {
+    @import "style-small.less";
+  }
   
   @import "lightbox.less";
 

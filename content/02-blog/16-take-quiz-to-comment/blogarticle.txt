@@ -1,0 +1,49 @@
+Title: Take quiz to comment
+----
+Date: Monday, 26 August, 2014
+----
+Text: 
+
+Sometimes, you read a good article that makes sense, you enjoy it, and the points are well made.
+
+![Image of cricketer](01.jpg "Optional title")
+
+Then... You get to the comments.
+
+> Herp derp. This is a blockquote. The kind you want to go on several lines because the shit is so profound.
+
+> Another paragraph.
+
+How many times have you shook your head in despair at how few commenters have actually read the article before they comment?
+
+```
+  code{
+    padding: 0 .5rem;
+    margin: 0 .5rem;
+    border-radius: .2rem;
+    border: thin dotted @grey-lt;
+    background: @grey-dk;
+    font-family: @codefont;
+    font-size: .9rem;
+    color: @white;
+    display: inline-block;
+  }
+
+  code.block{
+    display: block;
+    margin: @unit 0;
+  }
+```
+
+That's why I suggest a new way. A better way.
+
+Before being allowed to comment, everyone should take a short quiz with 5 questions about the article. You may then proceed to comment, anonymously if you so choose.
+
+Wouldn't that sort out the internet?
+
+The reason I started thinking about this was after reading a well written article by Brianna Wu, Co-Founder/Head of Development of [Giant Spacekat](http://www.revolution60.com/)
+
+
+
+
+
