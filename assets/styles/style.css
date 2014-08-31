@@ -311,8 +311,8 @@ header h1 a::after {
   border-top: medium solid #eeeeee;
   content: '';
   display: block;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   opacity: 0;
   -webkit-transform: translateY(0.1rem);
   -ms-transform: translateY(0.1rem);
@@ -349,24 +349,27 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
 }
-nav ul li {
+nav li {
   display: inline-block;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
 }
-nav ul li a {
+nav a {
   margin: .5rem;
   padding: .5rem;
 }
-nav ul li a:hover {
+nav a:hover {
   color: #ffffff;
 }
-nav ul li .active {
+nav .active {
   color: #dddddd;
 }
-nav ul li .active::before {
+nav .active .submenu {
+  display: block !important;
+}
+nav .active::before {
   font-family: icomoon, sans-serif;
   content: '\e60b';
   line-height: 0;
@@ -375,9 +378,15 @@ nav ul li .active::before {
   color: #dddddd;
   text-align: left;
 }
-nav ul li:first-child a {
+nav li:first-child a {
   margin-left: 0;
   padding-left: 0;
+}
+nav .submenu {
+  display: none;
+}
+nav .submenu li {
+  display: block;
 }
 section {
   margin: 1rem 0 4rem;
@@ -414,6 +423,8 @@ section figure figcaption {
   padding: .2rem 0 .1rem 0;
   color: #666666;
   text-align: right;
+  font-size: .9rem;
+  line-height: 1.4;
 }
 section figure figcaption strong {
   font-weight: 700;
@@ -491,12 +502,35 @@ section .error span {
   display: block;
   margin-bottom: 3rem;
 }
+.blog h2 a {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  display: block;
+}
+.blog h2 a:hover {
+  -webkit-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  transform: translateX(1rem);
+}
 .blog h2 a:after {
   content: "\e60b";
   font-family: icomoon, sans-serif;
   margin-left: 0rem;
-  position: relative;
+  position: absolute;
   top: .2rem;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  display: inline-block;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.blog h2 a:hover::after {
+  -webkit-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+  left: 0;
 }
 .blog .pagination {
   font-size: 100%;
@@ -653,6 +687,12 @@ footer ul li {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
+}
+footer ul li p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 0;
 }
 footer ul li:last-child {
   border: 0;

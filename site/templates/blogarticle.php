@@ -11,16 +11,10 @@
 
     <?php if($page->hasImages()): ?> 
 
-      <?php foreach($page->images() as $image): ?>
-      <figure>
-      <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
-        <figcaption><?php echo $image->caption() ?></figcaption>
-      </figure>
-
-      <?php endforeach ?>
+    <?php echo kirbytext($page->text()) ?>
 
     <?php endif ?>
-    <?php echo kirbytext($page->text()) ?>
+
 
 
     

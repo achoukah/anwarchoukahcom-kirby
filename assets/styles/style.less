@@ -306,7 +306,7 @@
         border-top: medium solid @white;
         content: '';
         display: block;
-        transition: .2s all;
+        transition: .2s all ease-in-out;
         opacity: 0;
         transform: translateY(.1rem);
       }
@@ -351,48 +351,60 @@
 
     ul{
       display: flex;
+    }
+
+    li{
+      display: inline-block;
+      flex: auto;
+    }
+
+    a{
+      margin: .5rem;
+      padding: .5rem;
+    }
+
+    a:hover{
+      color: @white-lt;
+    }
+
+    .active{
+      color: @white-dk;
+
+      .submenu {
+        display: block !important;
+      }
+    }
+
+    .active::before{
+      font-family: @icomoon;
+      // font-size: 1.3rem;
+      content: '\e60b';
+      line-height: 0;
+      position: relative;
+      top: .1rem;
+      // left: -.4rem;
+      color: @white-dk;
+      // display: inline-block;
+      text-align: left;
+
+    }
+
+    li:first-child{
       
 
-      li{
-        display: inline-block;
-        flex: auto;
-
-        a{
-          margin: .5rem;
-          padding: .5rem;
-        }
-
-        a:hover{
-          color: @white-lt;
-        }
-
-        .active{
-          color: @white-dk;
-        }
-
-        .active::before{
-          font-family: @icomoon;
-          // font-size: 1.3rem;
-          content: '\e60b';
-          line-height: 0;
-          position: relative;
-          top: .1rem;
-          // left: -.4rem;
-          color: @white-dk;
-          // display: inline-block;
-          text-align: left;
-
-        }
-
+      a{
+        margin-left: 0;
+        padding-left: 0;
       }
+    }
 
-      li:first-child{
-        
+  
 
-        a{
-          margin-left: 0;
-          padding-left: 0;
-        }
+    .submenu {
+      display: none;
+
+      li {
+        display: block;
       }
     }
   }
@@ -440,6 +452,8 @@
         padding: .2rem 0 .1rem 0;
         color: @grey;
         text-align: right;
+        font-size: .9rem;
+        line-height: 1.4;
 
         strong{
           font-weight: 700;
@@ -538,13 +552,33 @@
     
     h2{
 
+
+      a{
+        transform: translateX(0);
+        display: block;
+      }
+
+      a:hover {
+        transform: translateX(@unit);
+      }
+
       a:after {
         content: "\e60b"; // Align Left
         font-family: @icomoon;
         margin-left: 0rem;
-        position: relative;
+        position: absolute;
         top: .2rem;
-      }    
+        transform: translateX(0);
+        display: inline-block;
+        transition: .2s all ease-in-out;
+      }
+
+      a:hover::after {
+        transform: translateX(-1.5*@unit);
+        left: 0;
+      }
+
+
     }
 
     .pagination {
@@ -729,6 +763,13 @@
         display: inline;
         // padding: 0 .6rem;
         flex: auto;
+
+        p{
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          line-height: 0;
+        }
       }
 
  
