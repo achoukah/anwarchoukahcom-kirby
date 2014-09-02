@@ -498,22 +498,21 @@ section .error span {
 .gallery img {
   float: left;
 }
-.blog span {
-  display: block;
-  margin-bottom: 3rem;
-}
-.blog h2 a {
+.blog h2 a,
+.search h2 a {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
   display: block;
 }
-.blog h2 a:hover {
+.blog h2 a:hover,
+.search h2 a:hover {
   -webkit-transform: translateX(1rem);
   -ms-transform: translateX(1rem);
   transform: translateX(1rem);
 }
-.blog h2 a:after {
+.blog h2 a:after,
+.search h2 a:after {
   content: "\e60b";
   font-family: icomoon, sans-serif;
   margin-left: 0rem;
@@ -526,58 +525,71 @@ section .error span {
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
-.blog h2 a:hover::after {
+.blog h2 a:hover::after,
+.search h2 a:hover::after {
   -webkit-transform: translateX(-1.5rem);
   -ms-transform: translateX(-1.5rem);
   transform: translateX(-1.5rem);
   left: 0;
 }
-.blog .pagination {
+.pagination {
   font-size: 100%;
   border-top: medium solid #dddddd;
   border-bottom: medium solid #dddddd;
   padding: 1rem 0;
   margin-top: 3rem;
   float: left;
+  width: 100%;
 }
-.blog .pagination .prev {
+.pagination .prev {
   float: left;
 }
-.blog .pagination .prev::before {
+.pagination .prev::before {
   font-family: icomoon, sans-serif;
   content: '\e608';
   position: relative;
   top: .2rem;
 }
-.blog .pagination .next {
+.pagination .next {
   float: right;
 }
-.blog .pagination .next::after {
+.pagination .next::after {
   font-family: icomoon, sans-serif;
   content: '\e60b';
   position: relative;
   top: .2rem;
 }
-.blog .blog-item {
+.pagination .count {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pagination span {
+  color: #666666;
+}
+.pagination p {
+  margin: 0;
+  padding: 0;
+}
+.blog-excerpt {
   margin-bottom: 2rem;
 }
-.blog .blog-item h2 {
+.blog-excerpt h2 {
   border-top: thin solid #dddddd;
   padding-top: 1rem;
 }
-.blog .blog-item .blog-thumb {
+.blog-excerpt .blog-thumb {
   width: 188px;
   height: 188px;
   float: left;
   background: #dddddd;
   margin: 0 1rem 0 0;
 }
-.blog .blog-item .read-more {
+.blog-excerpt .read-more {
   text-align: right;
   width: 100%;
   display: block;
 }
-.blog .blog-item .read-more::after {
+.blog-excerpt .read-more::after {
   font-family: icomoon, sans-serif;
   content: '\e60b';
   position: relative;
@@ -660,6 +672,22 @@ section .error span {
 .contact #errors.visible,
 .contact #success.visible {
   display: block;
+}
+.search h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.search h4 {
+  text-align: right;
+}
+.search input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: Playfair Display, sans-serif;
+}
+.search div[role=pagination] {
+  font-size: .9rem;
 }
 footer {
   width: auto;

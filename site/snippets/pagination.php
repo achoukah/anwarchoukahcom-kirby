@@ -1,20 +1,32 @@
-<!-- site/snippets/pagination.php -->
-<nav role="pagination">  
+<div class="pagination">  
  
   <div class="count">
-    <strong><?php echo $pagination->countItems() ?></strong> Results / showing <strong><?php echo $pagination->numStart() ?></strong> - <strong><?php echo $pagination->numEnd() ?></strong>
+
+    <? if($pagination->hasPages()): ?>
+    <p><?php echo $pagination->countItems() ?> <span>Results</span></p>
+    <? else: ?>
+    <p>No more results</p>
+    <? endif ?>
+
+    <? if($pagination->hasPrevPage()): ?>
+    <p>Showing <?php echo $pagination->numStart() ?> <span>of</span> <?php echo $pagination->numEnd() ?></p>
+    <? endif ?>
+    <? if($pagination->hasNextPage()): ?>
+    <p>Showing <?php echo $pagination->numStart() ?> <span>of</span> <?php echo $pagination->numEnd() ?></p>
+    <? endif ?>
   </div>
   
   <div class="buttons">
     <? if($pagination->hasPrevPage()): ?>
-    <a class="prev" href="<?= $pagination->prevPageURL() ?>">&lsaquo; previous</a>
+    <a class="prev" href="<?= $pagination->prevPageURL() ?>">Previous</a>
     <? else: ?>
-    <span class="prev">&lsaquo; previous</span>
+    
     <? endif ?>
     <? if($pagination->hasNextPage()): ?>
-    <a class="next" href="<?= $pagination->nextPageURL() ?>">next &rsaquo;</a>
+    <a class="next" href="<?= $pagination->nextPageURL() ?>">Next</a>
     <? else: ?>
-    <span class="next">next &rsaquo;</span>
+    
     <? endif ?>
   </div>
-</nav>
+</div>
+
