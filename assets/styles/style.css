@@ -415,7 +415,7 @@ section article {
   width: 32rem;
 }
 section figure {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   padding: 0 0 0.5rem 0;
   border-bottom: thin solid #dddddd;
 }
@@ -460,9 +460,9 @@ section .error span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -483,6 +483,8 @@ section .error span {
 .gallery a.gallery-item img {
   -webkit-filter: grayscale(0.95);
   -filter: grayscale(0.95);
+  width: 188px;
+  height: 188px;
 }
 .gallery a.gallery-item span {
   width: inherit;
@@ -531,6 +533,11 @@ section .error span {
   -ms-transform: translateX(-1.5rem);
   transform: translateX(-1.5rem);
   left: 0;
+}
+time {
+  color: #999999;
+  font-size: .9rem;
+  margin: 0.5rem 0;
 }
 .pagination {
   font-size: 100%;
@@ -597,8 +604,9 @@ section .error span {
 }
 .blogarticle time {
   color: #666666;
-  padding: 1rem 0;
+  padding-bottom: 2rem;
   font-size: .9rem;
+  display: block;
 }
 .blogarticle time::before {
   content: 'Published: ';

@@ -2,48 +2,32 @@ Title: Take quiz to comment
 ----
 Date: Monday, 26 August, 2014
 ----
-Text: 
+Lede:
 
 Sometimes, you read a good article that makes sense, you enjoy it, and the points are well made.
+----
+Text: 
 
-![Image of cricketer](01.jpg "Optional title")
+I read a well written article by [Brianna Wu][1], Co-Founder/Head of Development of [Giant Spacekat](http://www.revolution60.com/) about gender issues among gamers. You should go [read][2] that.
 
-Then... You get to the comments.
+Then... You get to the comments. The first few comments seem to have missed the point completely of the article. Often when it comes to gender issues, a lot of men (although you will also find womenchipping in) will get angry and start shouting that the author is full of shit in the comment section.
 
-> Herp derp. This is a blockquote. The kind you want to go on several lines because the shit is so profound.
+Since I first read it, Polygon have disabled comments:
 
-> Another paragraph.
+> **Editor's note:** We have disabled comments for this post. While most comments were respectful and within the guidelines of Polygon's TOS, our staff came to the decision that the piece could and should stand without comments. When a contributor wants to share something highly personal with our readership, we want to offer them a place to do that without having their stories called into question, shouted down or dissected (even by the commenters offering support). If you want to continue discussion of this topic, we'd encourage you to share your thoughts in [this thread][3].
 
-How many times have you shook your head in despair at how few commenters have actually read the article before they comment?
-
-```
-  code{
-    padding: 0 .5rem;
-    margin: 0 .5rem;
-    border-radius: .2rem;
-    border: thin dotted @grey-lt;
-    background: @grey-dk;
-    font-family: @codefont;
-    font-size: .9rem;
-    color: @white;
-    display: inline-block;
-  }
-
-  code.block{
-    display: block;
-    margin: @unit 0;
-  }
-```
-
-That's why I suggest a new way. A better way.
+I have a suggestion for how to fix it.
 
 Before being allowed to comment, everyone should take a short quiz with 5 questions about the article. You may then proceed to comment, anonymously if you so choose.
 
-Wouldn't that sort out the internet?
+This idea does of course not come without problems. I can understand that it will involve a little bit of extra work that might not be feasible if your article output is high. It would probably have to take the form of multiple-choice questions.
 
-The reason I started thinking about this was after reading a well written article by Brianna Wu, Co-Founder/Head of Development of [Giant Spacekat](http://www.revolution60.com/)
+But wouldn't that sort out the internet?
 
 
+  [1]: http://
+  [2]: http://www.polygon.com/2014/7/22/5926193/women-gaming-harassment
+  [3]: http://www.polygon.com/forums/polynauts/2014/7/16/5904331/polynauts-ot-gender-sexuality-and-representation-in-gaming
 
 
 

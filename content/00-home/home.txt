@@ -2,11 +2,20 @@ Title: Home
 
 ----
 
+Lede:
+
+Welcome to Anwar Choukah's website.
+
+Please have a look around, I have an <a href="/index.php/portfolio" title="Anwar Choukah's portfolio">online portfolio</a> which you can peruse.
+
+I have a <a href="/blog" title="Anwar Choukah's blog">blog</a> where I write about HTML, CSS, and other front-end goodness as well as (semi-related) stuff I'm interested in.
+
+I have a page where you can <a href="/about" title="About Anwar Choukah">find out more about me</a>.
+
+I even have a page where you can <a href="/contact" title="Contact Anwar Choukah">get in touch</a>!
+
+----
+
 Text: 
 
-Yay! If you are seeing this, the installation of Kirby worked :)
-Now just give the links in the menu a try to see if URL redirection works as well.
-
-Check out the docs: <http://getkirby.com/docs> if you run into any problems or send me an email: <bastian@getkirby.com>
-
-Have fun with Kirby!
+A bit more here

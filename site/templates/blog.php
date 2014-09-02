@@ -16,7 +16,14 @@
       <article class="blog-excerpt">
         <h2><a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>"><?php echo html($article->title()) ?></a></h2>
 
-        <p><?php echo excerpt($article->text(), 200) ?></p>
+
+
+        <p><?php echo kirbytext($article->lede()) ?></p>
+
+        <time datetime="<?php echo $article->date('c') ?>" pubdate="pubdate" class="date">
+          Published: 
+        <?php echo $article->date('d.m.Y') ?>
+        </time>
 
         <a href="<?php echo $article->url() ?>" class="read-more" title="Read full article: <?php echo html($article->title()) ?>">Read more</a>
       </article>

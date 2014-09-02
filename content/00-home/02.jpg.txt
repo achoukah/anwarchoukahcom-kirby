@@ -3,5 +3,6 @@ Title: Cricketer batting at a bowled ball at dusk
 Caption: 
 
 This is a sepia-toned image of a cricketer batting at a bowled ball, presumably taken in India. 
-
-Source: [LoremPixel](http://lorempixel.com "Lorem Pixel, image placeholders")
+<br>
+Source: <a href="http://lorempixel.com" title="Lorem Pixel, image placeholders">LoremPixel</a>
+----

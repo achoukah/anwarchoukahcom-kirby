@@ -3,8 +3,8 @@
   // COLOURS
 
     @red:             #930000;
-    @red-lt:          lighten(@red,10%);
-    @red-dk:          darken(@red,10%);
+    @red-lt:          lighten(@red,60%);
+    @red-dk:          darken(@red,60%);
 
     @rebecca:         #663399;
     @rebecca-lt:      lighten(@rebecca,20%);
@@ -42,8 +42,8 @@
     @text-colour:     @black-lt;
 
     @link: 				    @red;
-    @link-hover:      @red-lt;
-    @link-active: 		@red-dk;
+    @link-hover:      @red-dk;
+    @link-active: 		@red-lt;
 
 // CSS RESET
 
@@ -444,7 +444,7 @@
     }
 
     figure{
-      margin: @unit 0;
+      margin-bottom: @unit;
       padding: 0 0 @unit/2 0;
       border-bottom: thin solid @white-dk;
 
@@ -497,7 +497,7 @@
 
     article{
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       align-items: flex-start;
     }
 
@@ -512,6 +512,8 @@
       img{
         -webkit-filter: grayscale(.95);
         -filter: grayscale(.95);
+        width: 188px;
+        height: 188px;
       }
       span{
         width: inherit;
@@ -540,11 +542,6 @@
 // BLOG / SEARCH RESULTS
 
   .blog, .search{
-
-    // span{
-    //   display: block;
-    //   margin-bottom: 3rem;
-    // }
 
     h1 {
       
@@ -577,9 +574,13 @@
         transform: translateX(-1.5*@unit);
         left: 0;
       }
-
-
     }
+  }
+
+  time {
+    color: @grey-lt;
+    font-size: .9rem;
+    margin: @unit/2 0;
   }
   
   .pagination {
@@ -662,8 +663,9 @@
 
     time {
       color: @grey;
-      padding: @unit 0;
+      padding-bottom: @unit*2;
       font-size: .9rem;
+      display: block;
     }
 
     time::before {
